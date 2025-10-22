@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            checkBox1 = new CheckBox();
             textBox1 = new TextBox();
             button1 = new Button();
             button2 = new Button();
@@ -39,23 +38,23 @@
             button7 = new Button();
             button8 = new Button();
             button9 = new Button();
+            button10 = new Button();
+            button11 = new Button();
+            button12 = new Button();
+            button13 = new Button();
+            label1 = new Label();
+            groupBox1 = new GroupBox();
+            radioButton2 = new RadioButton();
+            radioButton1 = new RadioButton();
+            label2 = new Label();
+            groupBox1.SuspendLayout();
             SuspendLayout();
-            // 
-            // checkBox1
-            // 
-            checkBox1.AutoSize = true;
-            checkBox1.Location = new Point(12, 103);
-            checkBox1.Name = "checkBox1";
-            checkBox1.Size = new Size(126, 27);
-            checkBox1.TabIndex = 0;
-            checkBox1.Text = "checkBox1";
-            checkBox1.UseVisualStyleBackColor = true;
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(516, 101);
+            textBox1.Location = new Point(498, 103);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(150, 30);
+            textBox1.Size = new Size(265, 30);
             textBox1.TabIndex = 1;
             // 
             // button1
@@ -148,11 +147,107 @@
             button9.UseVisualStyleBackColor = true;
             button9.Click += NumberButton_Click;
             // 
+            // button10
+            // 
+            button10.Location = new Point(246, 295);
+            button10.Name = "button10";
+            button10.Size = new Size(110, 56);
+            button10.TabIndex = 11;
+            button10.Text = "0";
+            button10.UseVisualStyleBackColor = true;
+            button10.Click += NumberButton_Click;
+            // 
+            // button11
+            // 
+            button11.Location = new Point(365, 295);
+            button11.Name = "button11";
+            button11.Size = new Size(53, 56);
+            button11.TabIndex = 12;
+            button11.Text = ".";
+            button11.UseVisualStyleBackColor = true;
+            button11.Click += NumberButton_Click;
+            // 
+            // button12
+            // 
+            button12.Location = new Point(498, 167);
+            button12.Name = "button12";
+            button12.Size = new Size(95, 72);
+            button12.TabIndex = 13;
+            button12.Text = "轉換";
+            button12.UseVisualStyleBackColor = true;
+            button12.Click += button12_Click;
+            // 
+            // button13
+            // 
+            button13.Location = new Point(668, 167);
+            button13.Name = "button13";
+            button13.Size = new Size(95, 72);
+            button13.TabIndex = 14;
+            button13.Text = "清除";
+            button13.UseVisualStyleBackColor = true;
+            button13.Click += Button_Clear;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Microsoft JhengHei UI", 12F);
+            label1.Location = new Point(498, 295);
+            label1.Name = "label1";
+            label1.Size = new Size(79, 30);
+            label1.TabIndex = 16;
+            label1.Text = "結果 : ";
+            // 
+            // groupBox1
+            // 
+            groupBox1.Controls.Add(radioButton2);
+            groupBox1.Controls.Add(radioButton1);
+            groupBox1.Location = new Point(12, 73);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new Size(208, 150);
+            groupBox1.TabIndex = 19;
+            groupBox1.TabStop = false;
+            // 
+            // radioButton2
+            // 
+            radioButton2.AutoSize = true;
+            radioButton2.Location = new Point(19, 94);
+            radioButton2.Name = "radioButton2";
+            radioButton2.Size = new Size(143, 27);
+            radioButton2.TabIndex = 22;
+            radioButton2.TabStop = true;
+            radioButton2.Text = "華氏轉成攝氏";
+            radioButton2.UseVisualStyleBackColor = true;
+            // 
+            // radioButton1
+            // 
+            radioButton1.AutoSize = true;
+            radioButton1.Location = new Point(19, 43);
+            radioButton1.Name = "radioButton1";
+            radioButton1.Size = new Size(143, 27);
+            radioButton1.TabIndex = 21;
+            radioButton1.TabStop = true;
+            radioButton1.Text = "攝氏轉成華氏";
+            radioButton1.UseVisualStyleBackColor = true;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(583, 295);
+            label2.Name = "label2";
+            label2.Size = new Size(0, 23);
+            label2.TabIndex = 20;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(11F, 23F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(label2);
+            Controls.Add(label1);
+            Controls.Add(button13);
+            Controls.Add(button12);
+            Controls.Add(button11);
+            Controls.Add(button10);
             Controls.Add(button7);
             Controls.Add(button8);
             Controls.Add(button9);
@@ -163,17 +258,18 @@
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(textBox1);
-            Controls.Add(checkBox1);
+            Controls.Add(groupBox1);
+            ForeColor = SystemColors.ControlDarkDark;
             Name = "Form1";
             Text = "Form1";
             Load += Form1_Load;
+            groupBox1.ResumeLayout(false);
+            groupBox1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-
-        private CheckBox checkBox1;
         private TextBox textBox1;
         private Button button1;
         private Button button2;
@@ -184,5 +280,14 @@
         private Button button7;
         private Button button8;
         private Button button9;
+        private Button button10;
+        private Button button11;
+        private Button button12;
+        private Button button13;
+        private Label label1;
+        private GroupBox groupBox1;
+        private Label label2;
+        private RadioButton radioButton2;
+        private RadioButton radioButton1;
     }
 }
