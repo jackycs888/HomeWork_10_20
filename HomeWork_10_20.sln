@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36511.14 d17.14
+VisualStudioVersion = 17.14.36511.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeWork_10_20", "HomeWork_10_20\HomeWork_10_20.csproj", "{F713702B-411D-4C94-B481-50B4CEA21DD4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Thermometer", "Thermometer\Thermometer.csproj", "{F306E614-3AFE-4656-85E8-ECAA5410340B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Char_Count", "Char_Count\Char_Count.csproj", "{CCE75655-25BF-4CDC-A779-35D6C284F852}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{F306E614-3AFE-4656-85E8-ECAA5410340B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F306E614-3AFE-4656-85E8-ECAA5410340B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F306E614-3AFE-4656-85E8-ECAA5410340B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCE75655-25BF-4CDC-A779-35D6C284F852}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCE75655-25BF-4CDC-A779-35D6C284F852}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCE75655-25BF-4CDC-A779-35D6C284F852}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCE75655-25BF-4CDC-A779-35D6C284F852}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
