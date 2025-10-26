@@ -6,13 +6,32 @@ namespace progTax
     {
         static void Main(string[] args)
         {
+            while (true)
+            {
+                Console.Write("請輸入年收入計算累進稅率(輸入0可結束) : ");
+                if (!decimal.TryParse(Console.ReadLine(), out decimal income))
+                {
+                    Console.WriteLine("輸入無效，請輸入數字");
+                    continue;
+                }
 
+                if (income <= 0)
+                {
+                    Console.WriteLine("程式結束，或者你輸入了負數");
+                    break;
+                }
+
+                decimal tax_Result = CalculateTax(income);
+                Console.WriteLine($"應繳稅額 : {tax_Result:C}");
+            }
+            /*
             Console.Write("請輸入年收入計算累進稅率 : ");
             decimal income = decimal.Parse(Console.ReadLine());
 
             decimal tax_Result = CalculateTax(income);
-
+            
             Console.WriteLine($"應繳稅額 : {tax_Result:C}");
+            */
         }
 
         private static decimal CalculateTax(decimal income)
@@ -27,7 +46,7 @@ namespace progTax
 
         private static decimal CalculateRecursive(decimal income, decimal[] thresholds, decimal[] rates, int level)
         {
-            if (level == thresholds.Length)
+            if (level == thresholds.Length) //當遞迴走到底時，直接計算最高級上面的那段級距後結束遞迴。沒有設定這個會陷入無限遞迴
             {
                 decimal previous = thresholds[level - 1];
                 return (income - previous) * rates[level];
