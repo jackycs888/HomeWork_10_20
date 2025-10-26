@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GuessNumber", "GuessNumber\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "progTax", "progTax\progTax.csproj", "{759D77F4-82D5-49A5-8129-295BEFA9F1C4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Numerology", "Numerology\Numerology.csproj", "{64ADEB27-BDB0-4E66-AB57-41BA01BECEAB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{759D77F4-82D5-49A5-8129-295BEFA9F1C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{759D77F4-82D5-49A5-8129-295BEFA9F1C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{759D77F4-82D5-49A5-8129-295BEFA9F1C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64ADEB27-BDB0-4E66-AB57-41BA01BECEAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64ADEB27-BDB0-4E66-AB57-41BA01BECEAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64ADEB27-BDB0-4E66-AB57-41BA01BECEAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64ADEB27-BDB0-4E66-AB57-41BA01BECEAB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

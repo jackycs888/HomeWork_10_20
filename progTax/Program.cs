@@ -46,12 +46,14 @@ namespace progTax
 
         private static decimal CalculateRecursive(decimal income, decimal[] thresholds, decimal[] rates, int level)
         {
-            if (level == thresholds.Length) //當遞迴走到底時，直接計算最高級上面的那段級距後結束遞迴。沒有設定這個會陷入無限遞迴
+            //重要!!!//
+            //當遞迴走到底時，直接計算最高級上面的那段級距後結束遞迴。沒有設定這個會陷入無限遞迴
+            if (level == thresholds.Length) 
             {
                 decimal previous = thresholds[level - 1];
                 return (income - previous) * rates[level];
             }
-
+            //重要!!!//
             if (income <= thresholds[level])
             {
                 decimal previous;
