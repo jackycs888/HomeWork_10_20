@@ -8,11 +8,14 @@ namespace Numerology
         public Form1()
         {
             InitializeComponent();
-            DataLoader("star.csv");
+            DataLoader(filePath);
         }
+
+        string filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "star.csv");
 
         private void DataLoader(string filePath)
         {
+            
             try
             {
                 if (!File.Exists(filePath))
